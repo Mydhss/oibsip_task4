@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#f7f0fa, #e8dff5);
+  color: #3d2c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-evenly;
+  background: #d4c2fc;
+  padding: 1rem 0;
+}
+
+.tab-header div {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  color: #8c72d9;
+  transition: color 0.3s ease-in-out;
+}
+
+.tab-header div.active {
+  color: #6c49b8;
+  font-weight: bold;
+}
+
+.form-container {
+  padding: 2rem;
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  background: #f1e6fc;
+  border: 1px solid #d9c6f9;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  color: #3d2c3c;
+}
+
+.form-container button {
+  background-color: #9e77ed;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background: #815bb5;
+}
